@@ -12,14 +12,11 @@ class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         addChildVc("Home")
         addChildVc("Live")
         addChildVc("Follow")
         addChildVc("Profile")
-        
-        
     }
 
     private func addChildVc(_ storyName: String){
