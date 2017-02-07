@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 private let kItemMagin : CGFloat = 10
 private let kItemW = (kScreenW - 3 * kItemMagin)/2
@@ -22,6 +23,10 @@ private let kHeaderViewID = "kHeaderViewID"
 
 class RecommendViewController: UIViewController {
 
+    
+    fileprivate lazy var recommendVM : RecommendViewModel = RecommendViewModel()
+
+    
     fileprivate lazy var collectionView : UICollectionView = { [unowned self] in
         //1.布局
         let layout = UICollectionViewFlowLayout()
@@ -53,11 +58,31 @@ class RecommendViewController: UIViewController {
         return collectionView
     }()
     
+    
+//    fileprivate lazy var cycleView : RecommendCycleView = {
+//        let cycleView = RecommendCycleView.recommendCycleView()
+//        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height: kCycleViewH)
+//        return cycleView
+//    }()
+//    fileprivate lazy var gameView : RecommendGameView = {
+//        let gameView = RecommendGameView.recommendGameView()
+//        gameView.frame = CGRect(x: 0, y: -kGameViewH, width: kScreenW, height: kGameViewH)
+//        return gameView
+//    }()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+      
         
         // 设置UI 界面
         setupUI()
+        
+        
+        //请求
+        
+        loadData()
     }
  }
 
@@ -72,36 +97,69 @@ extension RecommendViewController{
     
 }
 
+// MARK:- 请求数据
+extension RecommendViewController {
+    fileprivate func loadData() {
+        // 1.请求推荐数据
+        recommendVM.requestData {
+            // 1.展示推荐数据
+            self.collectionView.reloadData()
+            
+            // 2.将数据传递给GameView
+//            self.gameView.groups = self.recommendVM.anchorGroups
+        }
+        
+//        // 2.请求轮播数据
+//        recommendVM.requestCycleData {
+//            self.cycleView.cycleModels = self.recommendVM.cycleModels
+//        }
+    }
+}
+
+
+
 //MARK: -- CollectionView 数据
 extension RecommendViewController : UICollectionViewDataSource , UICollectionViewDelegateFlowLayout{
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 12
+        return recommendVM.anchorGroups.count
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if section == 0 {
-            return 8
-        }
-        return 4
+        let group = recommendVM.anchorGroups[section]
+        
+        return group.anchors.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        // 0.取出模型对象
+        let group = recommendVM.anchorGroups[indexPath.section]
+        let anchor = group.anchors[indexPath.item]
+
+        
         // 1.定义Cell
-        var cell : UICollectionViewCell!
+        var cell : CollectionViewBaseCell!
         
         // 2.取出Cell
         if indexPath.section == 1 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath) as! CollectionPrettyCell
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath) as! CollectionNormalCell
         }
-//        cell.backgroundColor = UIColor.red
+
+        // 4.将模型赋值给Cell
+        cell.anchor = anchor
+
+        
         return cell
 
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath)
+        // 1.取出section的HeaderView
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        
+        // 2.取出模型
+        headerView.group = recommendVM.anchorGroups[indexPath.section]
         
         return headerView
     }

@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DYZB" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="LXLive" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -69,6 +69,12 @@
                 <constraint firstItem="y5w-hu-rPn" firstAttribute="centerY" secondItem="brv-k6-ZdL" secondAttribute="centerY" id="rah-X5-7jL"/>
             </constraints>
             <size key="customSize" width="253" height="182"/>
+            <connections>
+                <outlet property="iconImageView" destination="y5w-hu-rPn" id="8do-Yo-UbN"/>
+                <outlet property="nickNameLabel" destination="HL5-Cd-Nrf" id="45H-2T-pOS"/>
+                <outlet property="onlineBtn" destination="Sji-4f-qai" id="nTK-Td-rFq"/>
+                <outlet property="roomNameLabel" destination="brv-k6-ZdL" id="gkr-Dq-1Y0"/>
+            </connections>
             <point key="canvasLocation" x="332.5" y="294"/>
         </collectionViewCell>
     </objects>

@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C1F7DB1021013577871301 /* Pods_LXLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFC2FAF95F5AFBE694712AE7 /* Pods_LXLive.framework */; };
 		C13E8CE81E4216B400CDC9CC /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E8CE71E4216B400CDC9CC /* PageContentView.swift */; };
 		C13E8CEA1E441FE700CDC9CC /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13E8CE91E441FE700CDC9CC /* RecommendViewController.swift */; };
+		C16ED0151E48BC8400663CDD /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16ED0141E48BC8400663CDD /* RecommendViewModel.swift */; };
+		C16ED0171E48BCCA00663CDD /* NSDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16ED0161E48BCCA00663CDD /* NSDate-Extension.swift */; };
+		C16ED0191E494B2F00663CDD /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16ED0181E494B2F00663CDD /* AnchorGroup.swift */; };
+		C16ED01B1E494B3800663CDD /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16ED01A1E494B3800663CDD /* AnchorModel.swift */; };
+		C16ED01D1E4951AF00663CDD /* CollectionViewBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16ED01C1E4951AF00663CDD /* CollectionViewBaseCell.swift */; };
 		C184C5281E477DEC00AD8FFD /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184C5261E477DEC00AD8FFD /* CollectionHeaderView.swift */; };
 		C184C5291E477DEC00AD8FFD /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C184C5271E477DEC00AD8FFD /* CollectionHeaderView.xib */; };
 		C184C52E1E477FFB00AD8FFD /* CollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184C52A1E477FFB00AD8FFD /* CollectionNormalCell.swift */; };
 		C184C52F1E477FFB00AD8FFD /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C184C52B1E477FFB00AD8FFD /* CollectionNormalCell.xib */; };
 		C184C5301E477FFB00AD8FFD /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184C52C1E477FFB00AD8FFD /* CollectionPrettyCell.swift */; };
 		C184C5311E477FFB00AD8FFD /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C184C52D1E477FFB00AD8FFD /* CollectionPrettyCell.xib */; };
+		C184C5331E47F7FA00AD8FFD /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = C184C5321E47F7FA00AD8FFD /* NetWorkTools.swift */; };
 		C1BD07E11E4085C50036DF6D /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD07E01E4085C50036DF6D /* UIBarButtonItem-Extension.swift */; };
 		C1BD07E31E4085D00036DF6D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD07E21E4085D00036DF6D /* Common.swift */; };
 		C1BD07E51E4086F40036DF6D /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BD07E41E4086F40036DF6D /* PageTitleView.swift */; };
@@ -32,14 +39,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		912D0E866048B826F596A75C /* Pods-LXLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-LXLive/Pods-LXLive.release.xcconfig"; sourceTree = "<group>"; };
+		9494F4491B11DD5D363E3E8A /* Pods-LXLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LXLive/Pods-LXLive.debug.xcconfig"; sourceTree = "<group>"; };
 		C13E8CE71E4216B400CDC9CC /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		C13E8CE91E441FE700CDC9CC /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		C16ED0141E48BC8400663CDD /* RecommendViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		C16ED0161E48BCCA00663CDD /* NSDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate-Extension.swift"; sourceTree = "<group>"; };
+		C16ED0181E494B2F00663CDD /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
+		C16ED01A1E494B3800663CDD /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		C16ED01C1E4951AF00663CDD /* CollectionViewBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewBaseCell.swift; sourceTree = "<group>"; };
 		C184C5261E477DEC00AD8FFD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		C184C5271E477DEC00AD8FFD /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		C184C52A1E477FFB00AD8FFD /* CollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionNormalCell.swift; path = ../CollectionNormalCell.swift; sourceTree = "<group>"; };
 		C184C52B1E477FFB00AD8FFD /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionNormalCell.xib; path = ../CollectionNormalCell.xib; sourceTree = "<group>"; };
 		C184C52C1E477FFB00AD8FFD /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionPrettyCell.swift; path = ../CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		C184C52D1E477FFB00AD8FFD /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionPrettyCell.xib; path = ../CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		C184C5321E47F7FA00AD8FFD /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		C1BD07E01E4085C50036DF6D /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		C1BD07E21E4085D00036DF6D /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		C1BD07E41E4086F40036DF6D /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
@@ -56,6 +71,7 @@
 		C1E272461E2F5BAA00098E9D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C1E2724A1E2F5BDE00098E9D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C1E2724C1E2F620C00098E9D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CFC2FAF95F5AFBE694712AE7 /* Pods_LXLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +79,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85C1F7DB1021013577871301 /* Pods_LXLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		035ED4BBEF34670729419D52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9494F4491B11DD5D363E3E8A /* Pods-LXLive.debug.xcconfig */,
+				912D0E866048B826F596A75C /* Pods-LXLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C16ED0131E48BC6D00663CDD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C16ED0141E48BC8400663CDD /* RecommendViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		C1BD07DF1E4085C50036DF6D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				C1BD07E01E4085C50036DF6D /* UIBarButtonItem-Extension.swift */,
 				C1BD07E81E408A6D0036DF6D /* UIColor-Extension.swift */,
+				C16ED0161E48BCCA00663CDD /* NSDate-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -83,6 +118,8 @@
 			children = (
 				C1E2720A1E2EFE7600098E9D /* LXLive */,
 				C1E272091E2EFE7600098E9D /* Products */,
+				035ED4BBEF34670729419D52 /* Pods */,
+				E6027CE09C39F7F6216FF9CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +169,7 @@
 		C1E2721F1E2F133700098E9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C16ED0131E48BC6D00663CDD /* ViewModel */,
 				C1E2723A1E2F5B7100098E9D /* View */,
 				C1E272391E2F5B7100098E9D /* Model */,
 				C1E272381E2F5B7100098E9D /* Controller */,
@@ -174,6 +212,7 @@
 			children = (
 				C1BD07DF1E4085C50036DF6D /* Extension */,
 				C1BD07E21E4085D00036DF6D /* Common.swift */,
+				C184C5321E47F7FA00AD8FFD /* NetWorkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -282,6 +321,8 @@
 		C1E272471E2F5BAA00098E9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C16ED0181E494B2F00663CDD /* AnchorGroup.swift */,
+				C16ED01A1E494B3800663CDD /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -295,8 +336,17 @@
 				C184C52B1E477FFB00AD8FFD /* CollectionNormalCell.xib */,
 				C184C52C1E477FFB00AD8FFD /* CollectionPrettyCell.swift */,
 				C184C52D1E477FFB00AD8FFD /* CollectionPrettyCell.xib */,
+				C16ED01C1E4951AF00663CDD /* CollectionViewBaseCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E6027CE09C39F7F6216FF9CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFC2FAF95F5AFBE694712AE7 /* Pods_LXLive.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1E2721A1E2EFE7600098E9D /* Build configuration list for PBXNativeTarget "LXLive" */;
 			buildPhases = (
+				B0C3EA6C8BEA96F6B64055BE /* [CP] Check Pods Manifest.lock */,
 				C1E272041E2EFE7600098E9D /* Sources */,
 				C1E272051E2EFE7600098E9D /* Frameworks */,
 				C1E272061E2EFE7600098E9D /* Resources */,
+				A4FB2708F32293F7D96D323B /* [CP] Embed Pods Frameworks */,
+				FAECDEA75E2DC75D692F27A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -374,6 +427,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A4FB2708F32293F7D96D323B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXLive/Pods-LXLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C3EA6C8BEA96F6B64055BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FAECDEA75E2DC75D692F27A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LXLive/Pods-LXLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1E272041E2EFE7600098E9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -383,14 +484,20 @@
 				C184C5281E477DEC00AD8FFD /* CollectionHeaderView.swift in Sources */,
 				C1BD07E11E4085C50036DF6D /* UIBarButtonItem-Extension.swift in Sources */,
 				C13E8CEA1E441FE700CDC9CC /* RecommendViewController.swift in Sources */,
+				C16ED0191E494B2F00663CDD /* AnchorGroup.swift in Sources */,
 				C1E2720C1E2EFE7600098E9D /* AppDelegate.swift in Sources */,
+				C184C5331E47F7FA00AD8FFD /* NetWorkTools.swift in Sources */,
 				C13E8CE81E4216B400CDC9CC /* PageContentView.swift in Sources */,
 				C1E272491E2F5BAA00098E9D /* MainViewController.swift in Sources */,
+				C16ED01D1E4951AF00663CDD /* CollectionViewBaseCell.swift in Sources */,
 				C1BD07E31E4085D00036DF6D /* Common.swift in Sources */,
 				C1BD07E91E408A6D0036DF6D /* UIColor-Extension.swift in Sources */,
+				C16ED0171E48BCCA00663CDD /* NSDate-Extension.swift in Sources */,
 				C184C5301E477FFB00AD8FFD /* CollectionPrettyCell.swift in Sources */,
 				C184C52E1E477FFB00AD8FFD /* CollectionNormalCell.swift in Sources */,
 				C1E2724D1E2F620C00098E9D /* HomeViewController.swift in Sources */,
+				C16ED0151E48BC8400663CDD /* RecommendViewModel.swift in Sources */,
+				C16ED01B1E494B3800663CDD /* AnchorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,12 +626,13 @@
 		};
 		C1E2721B1E2EFE7600098E9D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9494F4491B11DD5D363E3E8A /* Pods-LXLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = QD82P77WSG;
 				INFOPLIST_FILE = LXLive/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.LXLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,12 +642,13 @@
 		};
 		C1E2721C1E2EFE7600098E9D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 912D0E866048B826F596A75C /* Pods-LXLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = QD82P77WSG;
 				INFOPLIST_FILE = LXLive/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocfly.LXLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
