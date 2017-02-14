@@ -24,10 +24,6 @@
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_hot" translatesAutoresizingMaskIntoConstraints="NO" id="QvQ-px-Xig">
                     <rect key="frame" x="10" y="20" width="18" height="18"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="18" id="K1B-gZ-hay"/>
-                        <constraint firstAttribute="width" constant="18" id="SsJ-RT-zGH"/>
-                    </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="幼稚" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6kM-aU-m8I">
                     <rect key="frame" x="33" y="20" width="33" height="19.5"/>
@@ -60,6 +56,7 @@
             </constraints>
             <connections>
                 <outlet property="iconImageView" destination="QvQ-px-Xig" id="nS0-Vi-QUu"/>
+                <outlet property="moreBtn" destination="6hB-yf-w8D" id="OH5-cY-JDW"/>
                 <outlet property="titleLabel" destination="6kM-aU-m8I" id="4rL-v0-Bqg"/>
             </connections>
             <point key="canvasLocation" x="25" y="52"/>
