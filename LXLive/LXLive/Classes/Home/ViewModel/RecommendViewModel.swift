@@ -14,10 +14,9 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel: BaseViewModel {
     // MARK:- 懒加载属性
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
-    lazy var cycleModels : [CycleModel] = [CycleModel]()
+     lazy var cycleModels : [CycleModel] = [CycleModel]()
     fileprivate lazy var bigDataGroup : AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyGroup : AnchorGroup = AnchorGroup()
  }
